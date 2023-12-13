@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* -----------------------------------
+  reset
+------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* -----------------------------------
+  body  recipe
+------------------------------------ */
+body {
+  color: #333;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.0;
+  }
+
+/* -----------------------------------
+  layout (共通)
+------------------------------------ */
+.wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrapper > img {
+  width: 50%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center -70px;
+}
+.recipe {
+  width: 50%;
+  padding: 40px 70px 0;
+}
+
+/* -----------------------------------
+   main
+------------------------------------ */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.recipe > p {
+  line-height: 1.5;
+}
+h3 {
+  margin: 40px 0 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #999;
+}
+.recipe > dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.recipe dt, .recipe dd {
+  border-bottom: 1px dotted #999;
+  line-height: 2.5;
+}
+.recipe dd {
+  text-align: right;
+}
+.recipe > ol > li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  border-bottom: 1px dotted #999;
+  line-height: 2.5;
+}
+
+/* -----------------------------------
+  btn
+------------------------------------ */
+.btn {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.btn > a {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 16px 40px;
+  border: 1px solid #333;
+}
+
+/* -----------------------------------
+  footer
+------------------------------------ */
+.footer {
+  text-align: center;
+  padding: 20px auto;
+}
+.footer-nav > ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.footer-nav a {
+  display: block;
+  text-decoration: underline;
+}

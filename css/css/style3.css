@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  min-width: 100%;
+  vertical-align: bottom;
+}
+/* --------------------------------
+  body
+---------------------------------- */
+body {
+  color: #333;
+  font-size: 16px;
+  font-family: 'Noto Sans JP',sans-serif;
+  line-height: 1.0;
+}
+/* --------------------------------
+  layout(共通)
+---------------------------------- */
+/* .cotainer { 
+  max-width: 960px;
+  margin: 0 auto;
+ } 
+h1 {
+  width: fit-content;
+  margin-bottom: 30px auto;
+}
+h1 > p {
+  text-align: center;
+}
+h2 {
+  padding: 20px auto;
+border-bottom: 1px solid #666;
+ }   */
+/* --------------------------------
+  layout(共通)
+---------------------------------- */
+.wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrapper > img {
+  width: 50%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center -70px;
+}
+.recipe {
+  width: 50px;
+  padding: 40px 70px 0;
+}
+
+/* --------------------------------
+  wrapper
+---------------------------------- */
+/*  .wrapper {
+  display: flex;
+}
+.wrapper > img {
+width: 50%;
+height: 700px;
+object-fit: cover;
+object-position: center -70px;
+}  */
+
+/* --------------------------------
+  main  
+---------------------------------- */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.recipe > p {
+  line-height: 1.5;
+}
+h3 {
+  margin: 40px 0 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #999;
+}
+
+/* --------------------------------
+  recipe
+---------------------------------- */
+.recipe > dl {
+  display: grid;  /*flexじゃないよ！*/
+  /* 格子状のマス目のｸﾞﾘｯﾄﾞに好きな順番に配置したり結合したり自在に表現*/
+  grid-template-columns: repeat(2 1fr);
+}
+.recipe dt, dd {
+  border-bottom: 1px dotted #666;
+  line-height: 2.5;
+}
+.recipe dd {
+text-align: right;
+}
+/*.recipe ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe li {
+  border-bottom: 1px dotted #666;
+  line-height: 2.5;
+} */
+.recipe > ol li {
+list-style-type: decimal;
+list-style-position: inside;
+border-bottom: 1px dotted #999;
+line-height: 2.5;
+}
+
+/* --------------------------------
+  Call btn
+---------------------------------- */
+  .btn {
+    text-align: center;
+    margin-bottom: 80px;
+    /* border: 1px solid #666; */
+    /* padding: 20px 50px; */
+  }
+  .btn >a {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 16px 40px;
+    border: 1px solid #666;
+    /* border:rgb(241, 173, 128); */
+  }
+
+/* --------------------------------
+  footer
+---------------------------------- */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  /* text-decoration: 1px solid #666; */
+}
+.footer-nav >ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.footer-nav a {
+  display: block;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
